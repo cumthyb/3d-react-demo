@@ -144,7 +144,7 @@ const InstancedPoints = ({ data, layout, selectedPoint, onSelectPoint }) => {
             position={[0, 0, 0.3]}
             intensity={2.2}
             decay={30}
-            color="#3f3"
+            color="#red"
           />
           <pointLight
             position={[0, 0, 0]}

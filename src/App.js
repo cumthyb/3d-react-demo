@@ -1,8 +1,9 @@
 import * as React from 'react';
+import * as _ from "lodash"
 import ThreePointVis from './ThreePointVis/ThreePointVis';
 import './styles.css';
 
-const data = new Array(10000).fill(0).map((d, id) => ({ id }));
+const data = new Array(100).fill(0).map((d, id) => ({ id }));
 
 export default function App() {
   const [layout, setLayout] = React.useState('grid');
@@ -28,6 +29,7 @@ export default function App() {
         Reset Camera
       </button>
       <div className="controls">
+        <p>timestamp1: {_.default.now()}</p>
         <strong>Layouts</strong>{' '}
         <button
           onClick={() => setLayout('grid')}
