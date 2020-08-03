@@ -3,10 +3,10 @@ import * as _ from "lodash"
 import ThreePointVis from './ThreePointVis/ThreePointVis';
 import './styles.css';
 
-const data = new Array(100).fill(0).map((d, id) => ({ id }));
+const data = new Array(10000).fill(0).map((d, id) => ({ id }));
 
 export default function App() {
-  const [layout, setLayout] = React.useState('grid');
+  const [layout, setLayout] = React.useState('spiral');
   const [selectedPoint, setSelectedPoint] = React.useState(null);
 
   const visRef = React.useRef();
